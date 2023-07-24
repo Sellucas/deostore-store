@@ -1,34 +1,101 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DeoStore STORE
 
-## Getting Started
+img
 
-First, run the development server:
+## Sobre
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+**DeoStore** é um projeto de E-Commerce full stack que combina uma plataforma de E-Commerce com um Dashboard & CMS versátil que permite aos administradores gerenciar catálogos de produtos, categorias, medidas, cores, billboards, pedidos e outros conteúdos de forma fácil e intuitiva. A integração com o Stripe garante um processamento de pagamentos seguro e confiável para os clientes.
+
+O deployment foi realizado com o Vercel e está disponível [aqui](https://deostore-store.vercel.app).
+
+Para simulação de pagamento acesse [Stripe: como usar cartões de teste](https://stripe.com/docs/testing).
+
+## Tecnologias
+
+**DeoStore** foi desenvolvido utilizando as seguintes tecnologias:
+
+- Next.js
+- React
+- Typescript
+- Tailwind
+- Shadcn-UI
+- Prisma
+- MySQL
+- Stripe
+- Clerk
+- Cloudinary
+- Recharts
+- Zustand
+- PlanetScale
+- React-Hot-Toast
+- Lucide-Icons
+
+## Recursos
+
+- Consumindo API gerado no ADMIN DASHBOARD para obter informações sobre os produtos disponíveis.
+- Na página inicial do aplicativo, são exibidos produtos em destaque, selecionados para promoções ou lançamentos especiais.
+- Os produtos são organizados em diferentes categorias para facilitar a navegação e a busca.
+- Cada categoria de produto possui um "billboard" ou destaque visual na tela.
+- Sistema de carrinho de compras que permite aos usuários adicionar itens aos seus carrinhos para posterior compra.
+- Os usuários podem visualizar detalhes e informações essenciais sobre os produtos antes de adicioná-los ao carrinho.
+- Página dedicada à visualização de todas as especificações, descrições detalhadas do produto e imagens, alem de produtos relacionados.
+- Filtros de produtos com base em categorias, tamanhos e cores.
+- Finalização de compras com integração do Stripe.
+
+## Instalação
+
+```shell
+git clone https://github.com/Sellucas/deostore-store.git
+
+cd deostore-store
+
+npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Configuração arquivo .env
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```js
+NEXT_PUBLIC_API_URL=
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Iniciar o app
 
-## Learn More
+```shell
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Comandos disponíveis
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Executando comandos com o npm `npm run [comando]`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+comando   | descrição
+--------- | ------
+`dev`  | Inicia uma instância de desenvolvimento do app
 
-## Deploy on Vercel
+### Estrutura de Diretórios
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+├── . . .
+├── actions
+├── app
+    ├── (routes)
+        ├── cart
+        ├── category
+        ├── product
+        └── page.ts
+    ├── . . .
+    └── layout.ts
+├── components
+├── hooks
+├── lib
+├── . . .
+├── providers
+├── public
+└── . . .    
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contato
+
+- LinkedIn: [in/lucas-sell-machado](https://www.linkedin.com/in/lucas-sell-machado/)
+- Portfólio: [portfolio-sellucas.app](https://portfolio-sellucas.vercel.app)
+- Email: <lucassellmachado@gmail.com>
