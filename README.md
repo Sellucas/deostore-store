@@ -1,6 +1,6 @@
 # DeoStore STORE
 
-img
+![deostore](https://github.com/Sellucas/deostore-store/assets/75432770/6e4fe380-482f-4a38-a760-1702e27ed0a6)
 
 ## Sobre
 
